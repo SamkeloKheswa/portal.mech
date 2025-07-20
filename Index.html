@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MECH Support Item Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff9f5;
+      color: #333;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #c0392b;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .checkbox-group {
+      margin-top: 15px;
+    }
+    .checkbox-group label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      background: #e74c3c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>MECH Support Item Request Form</h1>
+  <form action="https://formspree.io/f/xwpqvbng" method="POST">
+    
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" required />
+
+    <label for="event">Event Name / Purpose:</label>
+    <input type="text" name="event" required />
+
+    <label for="date">Event Date:</label>
+    <input type="date" name="event_date" required />
+
+    <div class="checkbox-group">
+      <p><strong>Select Items Needed:</strong></p>
+      <label><input type="checkbox" name="lanyards" /> Personalized Lanyards</label>
+      <label><input type="checkbox" name="stamp" /> Business Stamp</label>
+      <label><input type="checkbox" name="banners" /> Banners</label>
+      <label><input type="checkbox" name="laptops" /> Two (2) Laptop Devices</label>
+      <label><input type="checkbox" name="register" /> Attendance Register</label>
+      <label><input type="checkbox" name="wifi" /> Wi-Fi Router</label>
+    </div>
+
+    <label for="notes">Additional Notes (Optional):</label>
+    <textarea name="notes" rows="4"></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <!-- Tawk.to Live Chat -->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_TAWKTO_PROPERTY_ID/1h0example';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+
+</body>
+</html>
